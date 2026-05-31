@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Catur</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Game Catur</h1>
+      <p>Permainan catur sederhana dengan giliran pemain, pemilihan bidak, dan pencatatan status.</p>
+    </header>
+
+    <section class="game-panel">
+      <div class="board-container">
+        <div id="board" class="board"></div>
+      </div>
+      <aside class="sidebar">
+        <div class="status-panel">
+          <h2>Status</h2>
+          <p id="status">Memuat permainan...</p>
+        </div>
+        <button id="newGameBtn" class="button">Mulai Game Baru</button>
+        <div class="legend">
+          <h2>Legenda</h2>
+          <p>Klik bidak untuk melihat langkah yang valid. Klik petak tujuan untuk memindahkannya.</p>
+          <ul>
+            <li><span class="legend-square selected"></span> Bidak terpilih</li>
+            <li><span class="legend-square movetarget"></span> Langkah valid</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
